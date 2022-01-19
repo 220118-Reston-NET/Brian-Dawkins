@@ -30,7 +30,7 @@ bool repeat = true;
 while (repeat)
 {
 
-Console.Clear();
+//Console.Clear();
 Console.WriteLine("Welcome to programming!");
 Console.WriteLine("Please tell me your name");
 string name = Console.ReadLine();
