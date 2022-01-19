@@ -17,6 +17,16 @@ namespace CollectionFunction
         //Used to store a datatype and has variable size
         private List<string> strings = new List<string>();
 
+        //Hashset Collection
+        //There is no particular order to the elements so NOT zero-based index
+        //You cannot have duplicate elements
+        private HashSet<int> _numsCollection = new HashSet<int>();
+
+        //Dicitonary Collection
+        //Stores information through key-value pairs 
+        //There is no particular order
+        private Dictionary<string, int> _directory = new Dictionary<string, int>();
+
         //Non=generic Collection
         //They store any datatype and have variable size
 
@@ -57,6 +67,25 @@ namespace CollectionFunction
             Console.WriteLine(item);
         }
 
+            Console.WriteLine("=Hashset Demo=");
+            _numsCollection.Add(1);
+            _numsCollection.Add(2);
+            _numsCollection.Add(3);
+            _numsCollection.Add(1);
+
+            foreach (int item in _numsCollection)
+            {
+                Console.WriteLine(item);
+                //Console.WriteLine(item[1]); Gives an exception because it is a zero-based index
+            }
+
+            Console.WriteLine("=Dictionary Demo=");
+            _directory.Add("Stephen", -10000);
+            _directory.Add("Vijhan", 1000);
+            _directory.Add("Jonathon", -100000);
+
+            Console.WriteLine(_directory["Stephen"]);
+            Console.WriteLine(_directory["Jonathon"]);
         }
     }
 }
