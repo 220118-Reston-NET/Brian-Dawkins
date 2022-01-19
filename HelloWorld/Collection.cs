@@ -84,6 +84,7 @@ namespace CollectionFunction
             _directory.Add("Vijhan", 1000);
             _directory.Add("Jonathon", -100000);
 
+            //Dictionary uses key to look up stored data 
             Console.WriteLine(_directory["Stephen"]);
             Console.WriteLine(_directory["Jonathon"]);
         }
