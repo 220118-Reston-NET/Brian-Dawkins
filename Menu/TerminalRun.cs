@@ -14,5 +14,5 @@ while (repeat)
     string userInput = Console.ReadLine();
 
     if (userInput == "1");
-    Console.WriteLine(Burger);
+    Console.WriteLine();
 }

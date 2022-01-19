@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using CarFunction;
+using CollectionFunction;
 
 //This will print whatever string you put in the parentheses in the terminal 
 Console.WriteLine("Hello, World!");
@@ -25,33 +26,37 @@ Console.WriteLine("Hello, World!");
 
 // Console.WriteLine(car2.Color);
 // Console.WriteLine(car2.TotalDistance());
-bool repeat = true;
+// bool repeat = true;
 
-while (repeat)
-{
+// while (repeat)
+// {
 
-//Console.Clear();
-Console.WriteLine("Welcome to programming!");
-Console.WriteLine("Please tell me your name");
-string name = Console.ReadLine();
-Console.WriteLine($"Hello {name}, what do you want to do today?");
-Console.WriteLine("[1] = Add two numbers");
-Console.WriteLine("[2] = Exit");
+// //Console.Clear();
+// Console.WriteLine("Welcome to programming!");
+// Console.WriteLine("Please tell me your name");
+// string name = Console.ReadLine();
+// Console.WriteLine($"Hello {name}, what do you want to do today?");
+// Console.WriteLine("[1] = Add two numbers");
+// Console.WriteLine("[2] = Exit");
 
-string userInput = Console.ReadLine();
+// string userInput = Console.ReadLine();
 
-if (userInput == "1")
-{
-    Console.WriteLine("Please give me two numbers");
-    int num1 = Convert.ToInt32(Console.ReadLine());
-    int num2 = Convert.ToInt32(Console.ReadLine());
+// if (userInput == "1")
+// {
+//     Console.WriteLine("Please give me two numbers");
+//     int num1 = Convert.ToInt32(Console.ReadLine());
+//     int num2 = Convert.ToInt32(Console.ReadLine());
 
-    Console.WriteLine($"The sum is: {num2+num1}");
-    Console.WriteLine("Please press Enter to continue");
-    Console.ReadLine();
-}
-else if(userInput == "2")
-{
-    repeat = false;
-}
-}
+//     Console.WriteLine($"The sum is: {num2+num1}");
+//     Console.WriteLine("Please press Enter to continue");
+//     Console.ReadLine();
+// }
+// else if(userInput == "2")
+// {
+//     repeat = false;
+// }
+// }
+
+//Initialized Collection class
+Collection collect = new Collection();
+collect.CollectionMain();
