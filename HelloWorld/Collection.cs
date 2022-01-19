@@ -8,6 +8,18 @@ namespace CollectionFunction
         //Syntax: (datatype)[] (name of variable) = new (datatype)[(size of the array)];
         private int[] _nums = new int[5];
 
+        //Generic Collection
+        //They store a specific datatype and have variable size
+        //Syntax: <(datatype )>
+
+        //List Collection
+        //zero-based index
+        //Used to store a datatype and has variable size
+        private List<string> strings = new List<string>();
+
+        //Non=generic Collection
+        //They store any datatype and have variable size
+
         public void CollectionMain()
         {
             Console.WriteLine("===Collection Demo===");
@@ -32,6 +44,17 @@ namespace CollectionFunction
         {
             Console.WriteLine("Current value of i: "+ i);
             Console.WriteLine(_nums[i]);
+        }
+
+        Console.WriteLine("===Generic Collection===");
+        Console.WriteLine("=List Demo=");
+        strings.Add("First element");
+        strings.Add("Second element");
+        strings.Add("Third element");
+
+        foreach(string item in strings)
+        {
+            Console.WriteLine(item);
         }
 
         }
