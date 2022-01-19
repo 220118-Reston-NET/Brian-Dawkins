@@ -24,7 +24,13 @@ Console.WriteLine("Hello, World!");
 // };
 
 // Console.WriteLine(car2.Color);
+// Console.WriteLine(car2.TotalDistance());
+bool repeat = true;
 
+while (repeat)
+{
+
+Console.Clear();
 Console.WriteLine("Welcome to programming!");
 Console.WriteLine("Please tell me your name");
 string name = Console.ReadLine();
@@ -41,4 +47,11 @@ if (userInput == "1")
     int num2 = Convert.ToInt32(Console.ReadLine());
 
     Console.WriteLine($"The sum is: {num2+num1}");
+    Console.WriteLine("Please press Enter to continue");
+    Console.ReadLine();
+}
+else if(userInput == "2")
+{
+    repeat = false;
+}
 }

@@ -62,7 +62,13 @@ public void Start(int p_fuel)
     Console.WriteLine($"Current fuel: {Fuel}");
 }
 
+//Will give the total distance of a car
+//Methods can return data back if you didnt put void
+public double TotalDistance()
+{
 
+    return (double)Fuel/_gallonPerMile;
+}
 
 }
 }
