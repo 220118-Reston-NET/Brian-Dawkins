@@ -13,6 +13,23 @@ while (repeat)
 
     string userInput = Console.ReadLine();
 
-    if (userInput == "1");
-    Console.WriteLine();
+    if (userInput == "1")
+    {
+    Console.WriteLine("Great choice! You just ordered The Special");
+    Console.WriteLine("Press enter to continue");
+    Console.ReadLine();
+}
+    else if (userInput == "2")
+    {
+        Console.WriteLine("Great choice! You just ordered fries");
+        Console.WriteLine("Press enter to continue");
+        Console.ReadLine();
+    }
+    else if (userInput == "3")
+    {
+        Console.WriteLine("Great choice! You just ordered a combo");
+        Console.WriteLine("Press enter to continue");
+        Console.ReadLine();
+    }
+    
 }

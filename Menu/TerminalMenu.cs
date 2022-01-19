@@ -28,5 +28,11 @@ namespace FastFood
             set {_combo = value;}
         }
 
+        public void Order()
+        {
+            _burger = "The Special";
+            
+        }
+
 }
 }
