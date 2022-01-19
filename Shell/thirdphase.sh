@@ -62,7 +62,20 @@ fi
 if [ "$ans3" == "1" ]
 then 
 echo "Great choice! Your combo is on the way!"
-else 
+fi
+
+if [ "$ans3" == "2" ]
+then 
+echo "Great choice! Your combo is on the way!"
+fi
+
+if [ "$ans3" == "3" ]
+then 
+echo "Great choice! Your combo is on the way!"
+fi
+
+if [ "$ans3" == "4" ]
+then
 echo "Great choice! Your combo is on the way!"
 fi
 
