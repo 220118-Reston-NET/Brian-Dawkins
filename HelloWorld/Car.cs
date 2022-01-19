@@ -34,6 +34,16 @@ public string Owner
 
 public int Fuel { get; set; }
 
+//Constructor
+//It is a special method that will run first whenever you create an object out of that class
+public Car()
+{
+    _color = "Blue";
+    _gallonPerMile = 10;
+    _owner = "No Owner";
+    Fuel = 100;
+}
+
 //A method will run multiple lines of code to do some sort of operation/behavior/function
 //void this method will return/give back nothing 
 //We can change void into another datatype if you want the method to give information back
@@ -51,6 +61,8 @@ public void Start(int p_fuel)
     Console.WriteLine("The car is starting right now");
     Console.WriteLine($"Current fuel: {Fuel}");
 }
+
+
 
 }
 }
