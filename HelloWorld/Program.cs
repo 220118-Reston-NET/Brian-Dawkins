@@ -6,21 +6,39 @@ Console.WriteLine("Hello, World!");
 
 //NameofClass NameofVariable = new NameofClass();
 //Initializing an object out of a class
-Car car1 = new Car();
-Console.WriteLine(car1.Color);
-car1.Color = "Red";
-Console.WriteLine(car1.Color);
-car1.Fuel = 10;
-Console.WriteLine(car1.Fuel);
-car1.Start();
-car1.Start(100);
+// Car car1 = new Car();
+// Console.WriteLine(car1.Color);
+// car1.Color = "Red";
+// Console.WriteLine(car1.Color);
+// car1.Fuel = 10;
+// Console.WriteLine(car1.Fuel);
+// car1.Start();
+// car1.Start(100);
 
-//Anpohter way of initializing a object out of a class but preconfiguring our states already
-Car car2 = new Car()
+// //Anpohter way of initializing a object out of a class but preconfiguring our states already
+// Car car2 = new Car()
+// {
+//     Color = "Yellow",
+//     Fuel = 1000,
+//     Owner = "Stephen"
+// };
+
+// Console.WriteLine(car2.Color);
+
+Console.WriteLine("Welcome to programming!");
+Console.WriteLine("Please tell me your name");
+string name = Console.ReadLine();
+Console.WriteLine($"Hello {name}, what do you want to do today?");
+Console.WriteLine("[1] = Add two numbers");
+Console.WriteLine("[2] = Exit");
+
+string userInput = Console.ReadLine();
+
+if (userInput == "1")
 {
-    Color = "Yellow",
-    Fuel = 1000,
-    Owner = "Stephen"
-};
+    Console.WriteLine("Please give me two numbers");
+    int num1 = Convert.ToInt32(Console.ReadLine());
+    int num2 = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine(car2.Color);
+    Console.WriteLine($"The sum is: {num2+num1}");
+}
