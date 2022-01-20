@@ -37,9 +37,11 @@ namespace SerializationFunction
             string jsonString2 = File.ReadAllText(_filepath);
 
             //JsonSerializer converts the JSON object into a C3 object
-            List<Data> amountOfItems1 = JsonSerializer.Deserialize<List<Data>>(jsonString2);
+            List<Data> itemData1 = JsonSerializer.Deserialize<List<Data>>(jsonString2);
 
-            Console.WriteLine(amountOfItems1[0]._items);
+            Console.WriteLine(itemData1[0].showOrder);
+            Console.WriteLine(itemData1[0]._items);
+            Console.WriteLine(itemData1[0]._searchCombos);
     
          }
     }
