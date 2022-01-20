@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using CarFunction;
 using CollectionFunction;
+using ConversionFunction;
 
 //This will print whatever string you put in the parentheses in the terminal 
 Console.WriteLine("Hello, World!");
@@ -60,3 +61,11 @@ Console.WriteLine("Hello, World!");
 //Initialized Collection class
 Collection collect = new Collection();
 collect.CollectionMain();
+
+Conversion.ConversionMain();
+Conversion._num = 10;
+Conversion conv1 = new Conversion();
+Conversion conv2 = new Conversion();
+
+Console.WriteLine(conv1.GiveMeNumber());
+Console.WriteLine(conv2.GiveMeNumber());
