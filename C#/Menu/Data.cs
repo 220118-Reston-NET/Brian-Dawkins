@@ -17,7 +17,7 @@ public class Data
  public int _items {get; set; }
 
  //Array storing items
- public int[] _amountOfItems = new int[2];
+ public int[] _amountOfItems = new int[3];
 
  //Initializing variables
  public void start()
