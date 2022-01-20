@@ -3,6 +3,7 @@ using CarFunction;
 using CollectionFunction;
 using ConversionFunction;
 using FastFood;
+using DataFunction;
 
 //This will print whatever string you put in the parentheses in the terminal 
 Console.WriteLine("Hello, World!");
@@ -70,6 +71,8 @@ Console.WriteLine("Hello, World!");
 
 // Console.WriteLine(conv1.GiveMeNumber());
 // Console.WriteLine(conv2.GiveMeNumber());
+
+Data newData = new Data();
 
 bool repeat = true;
 
