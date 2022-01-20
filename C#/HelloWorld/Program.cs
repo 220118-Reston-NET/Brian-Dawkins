@@ -2,7 +2,7 @@
 using CarFunction;
 using CollectionFunction;
 using ConversionFunction;
-
+using SerializationFunction;
 
 //This will print whatever string you put in the parentheses in the terminal 
 Console.WriteLine("Hello, World!");
@@ -59,7 +59,7 @@ Console.WriteLine("Hello, World!");
 // }
 // }
 
-//Initialized Collection class
+// Initialized Collection class
 // Collection collect = new Collection();
 // collect.CollectionMain();
 
@@ -71,3 +71,4 @@ Console.WriteLine("Hello, World!");
 // Console.WriteLine(conv1.GiveMeNumber());
 // Console.WriteLine(conv2.GiveMeNumber());
 
+Serialization.SerialMain();
