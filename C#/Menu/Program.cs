@@ -17,6 +17,7 @@ while (repeat)
     Console. WriteLine(" [3] = Combo ");
 
     string userInput = Console.ReadLine();
+    Console.Clear();
 
     if (userInput == "1")
     {
@@ -32,9 +33,11 @@ while (repeat)
         
         string userInput2 = Console.ReadLine();
         Console.ReadLine();
-
+        
+   
     if (userInput2 == "1")
     {
+        Console.Clear();
         newData.showOrder();
         Console.WriteLine("Thank you! Your order will be ready shortly!");
         repeat = false;
@@ -62,6 +65,7 @@ while (repeat)
 
     if (userInput2 == "1")
     {
+        Console.Clear();
         newData.showOrder();
         Console.WriteLine("Thank you! Your order will be ready shortly!");
         repeat = false;
@@ -87,6 +91,7 @@ while (repeat)
 
     if (userInput2 == "1")
     {
+        Console.Clear();
         newData.showOrder();
         Console.WriteLine("Thank you! Your order will be ready shortly!");
         repeat = false;
