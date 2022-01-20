@@ -92,5 +92,23 @@ public void showOrder()
     Console.WriteLine("You have " + _amountOfItems[2] + " combos");
     Console.WriteLine();
 }
+
+//Searches specifically for Specials in the order
+public void _searchSpecials()
+{
+    Console.WriteLine("You have " + _amountOfItems[0] + " Specials");
+}
+
+//Searches specifically for fries
+public void _searchFries()
+{
+    Console.WriteLine("You have " + _amountOfItems[1] + " fries");
+}
+
+//Searches specifically for combos
+public void _searchCombos()
+{
+    Console.WriteLine("You have " + _amountOfItems[2] + " combos");
+}
 }
 }
