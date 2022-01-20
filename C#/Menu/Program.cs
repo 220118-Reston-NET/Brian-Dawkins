@@ -42,6 +42,7 @@ while (repeat)
         newData.showOrder();
         Console.WriteLine("Thank you! Your order will be ready shortly!");
         repeat = false;
+        Serialization.SerialMain();
 
        
     }
@@ -70,6 +71,7 @@ while (repeat)
         newData.showOrder();
         Console.WriteLine("Thank you! Your order will be ready shortly!");
         repeat = false;
+        Serialization.SerialMain();
     }
     else 
     {
@@ -96,6 +98,7 @@ while (repeat)
         newData.showOrder();
         Console.WriteLine("Thank you! Your order will be ready shortly!");
         repeat = false;
+        Serialization.SerialMain();
     }
     else 
     {

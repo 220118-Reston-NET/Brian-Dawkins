@@ -14,10 +14,17 @@ namespace SerializationFunction
 
          public static void SerialMain()
          {
-            Data JSONData = new Data();
            
-            //Created a list for items
-            List<_amountOfItems> amountOfItems = new List<_amountOfItems>(); 
+            //Created a list of items
+            List<Data> amountOfItems = new List<Data>(); 
+
+            Data itemData = new Data();
+            {
+                Console.WriteLine(itemData.showOrder);
+            }
+
+            amountOfItems.Add(itemData);
+            amountOfItems.Add(itemData);
             
             //Adding the _amountofitems from Data file
             string jsonString = JsonSerializer.Serialize(amountOfItems, new JsonSerializerOptions {WriteIndented = true});
@@ -30,9 +37,9 @@ namespace SerializationFunction
             string jsonString2 = File.ReadAllText(_filepath);
 
             //JsonSerializer converts the JSON object into a C3 object
-            List<_amountOfItems> amountOfItems1 = JsonSerializer.Deserialize<List<_amountOfItems>>(jsonString2);
+            List<Data> amountOfItems1 = JsonSerializer.Deserialize<List<Data>>(jsonString2);
 
-            Console.WriteLine(amountOfItems1[0].showorder);
+            Console.WriteLine(amountOfItems1[0]._items);
     
          }
     }
