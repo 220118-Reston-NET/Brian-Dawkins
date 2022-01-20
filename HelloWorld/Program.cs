@@ -2,6 +2,7 @@
 using CarFunction;
 using CollectionFunction;
 using ConversionFunction;
+using FastFood;
 
 //This will print whatever string you put in the parentheses in the terminal 
 Console.WriteLine("Hello, World!");
@@ -59,13 +60,97 @@ Console.WriteLine("Hello, World!");
 // }
 
 //Initialized Collection class
-Collection collect = new Collection();
-collect.CollectionMain();
+// Collection collect = new Collection();
+// collect.CollectionMain();
 
-Conversion.ConversionMain();
-Conversion._num = 10;
-Conversion conv1 = new Conversion();
-Conversion conv2 = new Conversion();
+// Conversion.ConversionMain();
+// Conversion._num = 10;
+// Conversion conv1 = new Conversion();
+// Conversion conv2 = new Conversion();
 
-Console.WriteLine(conv1.GiveMeNumber());
-Console.WriteLine(conv2.GiveMeNumber());
+// Console.WriteLine(conv1.GiveMeNumber());
+// Console.WriteLine(conv2.GiveMeNumber());
+
+bool repeat = true;
+
+while (repeat)
+{
+    Console.WriteLine("Welcome to The Burger Joint!");
+    Console.WriteLine("What would you like to eat?");
+    Console.WriteLine(" [1] = Burger ");
+    Console.WriteLine(" [2] = Fries ");
+    Console. WriteLine(" [3] = Combo ");
+
+    string userInput = Console.ReadLine();
+
+    if (userInput == "1")
+    {
+    Console.WriteLine("Great choice! You just ordered The Special");
+    Console.WriteLine("Press enter to continue");
+    Console.ReadLine();
+
+    Console.WriteLine("Will that complete your order?");
+        Console.WriteLine("[1] Yes ");
+        Console.WriteLine("[2] No");
+        
+        string userInput2 = Console.ReadLine();
+        Console.ReadLine();
+
+    if (userInput2 == "1")
+    {
+        Console.WriteLine("Thank you! Your order will be ready shortly!");
+        repeat = false;
+    }
+    else 
+    {
+        Console.WriteLine();
+    }
+}
+    else if (userInput == "2")
+    {
+        Console.WriteLine("Great choice! You just ordered fries");
+        Console.WriteLine("Press enter to continue");
+        Console.ReadLine();
+
+        Console.WriteLine("Will that complete your order?");
+        Console.WriteLine("[1] Yes ");
+        Console.WriteLine("[2] No");
+        
+        string userInput2 = Console.ReadLine();
+        Console.ReadLine();
+
+    if (userInput2 == "1")
+    {
+        Console.WriteLine("Thank you! Your order will be ready shortly!");
+        repeat = false;
+    }
+    else 
+    {
+        Console.WriteLine();
+    }
+    }
+    else if (userInput == "3")
+    {
+        Console.WriteLine("Great choice! You just ordered a combo");
+        Console.WriteLine("Press enter to continue");
+        Console.ReadLine();
+
+        Console.WriteLine("Will that complete your order?");
+        Console.WriteLine("[1] Yes ");
+        Console.WriteLine("[2] No");
+        
+        string userInput2 = Console.ReadLine();
+        Console.ReadLine();
+
+    if (userInput2 == "1")
+    {
+        Console.WriteLine("Thank you! Your order will be ready shortly!");
+        repeat = false;
+    }
+    else 
+    {
+        Console.WriteLine();
+    }
+    }
+   
+}

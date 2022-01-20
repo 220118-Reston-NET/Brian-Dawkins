@@ -35,7 +35,7 @@ namespace CollectionFunction
 
         public void CollectionMain()
         {
-            Console.WriteLine("===Collection Demo===");
+           // Console.WriteLine("===Collection Demo===");
 
             _nums[0] = 3;
             _nums[1] = 10;
@@ -44,33 +44,33 @@ namespace CollectionFunction
         //A way to go through a list
         //For each will iterate through all of the elements of a collection/array
         //Syntax: ( (datatype) (Name of variable) in (Name of array/collection))
-            Console.WriteLine("===Foreach Loop===");
+            //Console.WriteLine("===Foreach Loop===");
             foreach ( int num in _nums)
             {
-                Console.WriteLine(num);
+               // Console.WriteLine(num);
         }
 
         // For loop is for a more complex way to iterate through a collection
         //Syntax: ((block 1 used to initialize some temp variable)); (block 2 - used for some condition to satisfy); (block 3 - how )
-        Console.WriteLine("===For Loop===");
+       // Console.WriteLine("===For Loop===");
         for (int i = 0; i < _nums.Length; i+=2)
         {
-            Console.WriteLine("Current value of i: "+ i);
-            Console.WriteLine(_nums[i]);
+            //Console.WriteLine("Current value of i: "+ i);
+            //Console.WriteLine(_nums[i]);
         }
 
-        Console.WriteLine("===Generic Collection===");
-        Console.WriteLine("=List Demo=");
+        //Console.WriteLine("===Generic Collection===");
+       // Console.WriteLine("=List Demo=");
         _strings.Add("First element");
         _strings.Add("Second element");
         _strings.Add("Third element");
 
         foreach(string item in _strings)
         {
-            Console.WriteLine(item);
+            //Console.WriteLine(item);
         }
 
-            Console.WriteLine("=Hashset Demo=");
+           // Console.WriteLine("=Hashset Demo=");
             _numsCollection.Add(1);
             _numsCollection.Add(2);
             _numsCollection.Add(3);
@@ -78,20 +78,20 @@ namespace CollectionFunction
 
             foreach (int item in _numsCollection)
             {
-                Console.WriteLine(item);
+               // Console.WriteLine(item);
                 //Console.WriteLine(item[1]); Gives an exception because it is a zero-based index
             }
 
-            Console.WriteLine("=Dictionary Demo=");
+           // Console.WriteLine("=Dictionary Demo=");
             _directory.Add("Stephen", -10000);
             _directory.Add("Vijhan", 1000);
             _directory.Add("Jonathon", -100000);
 
             //Dictionary uses key to look up stored data 
-            Console.WriteLine(_directory["Stephen"]);
-            Console.WriteLine(_directory["Jonathon"]);
+            //Console.WriteLine(_directory["Stephen"]);
+           // Console.WriteLine(_directory["Jonathon"]);
 
-            Console.WriteLine("===Non-generic Collection===");
+           // Console.WriteLine("===Non-generic Collection===");
 
             _nonGeneric.Add("Stephen");
             _nonGeneric.Add(10);
