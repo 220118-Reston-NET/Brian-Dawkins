@@ -1,3 +1,5 @@
+using System.Collections;
+
 namespace CollectionFunction
 {
 
@@ -15,7 +17,7 @@ namespace CollectionFunction
         //List Collection
         //zero-based index
         //Used to store a datatype and has variable size
-        private List<string> strings = new List<string>();
+        private List<string> _strings = new List<string>();
 
         //Hashset Collection
         //There is no particular order to the elements so NOT zero-based index
@@ -29,6 +31,7 @@ namespace CollectionFunction
 
         //Non=generic Collection
         //They store any datatype and have variable size
+        private ArrayList _nonGeneric = new ArrayList(); 
 
         public void CollectionMain()
         {
@@ -58,11 +61,11 @@ namespace CollectionFunction
 
         Console.WriteLine("===Generic Collection===");
         Console.WriteLine("=List Demo=");
-        strings.Add("First element");
-        strings.Add("Second element");
-        strings.Add("Third element");
+        _strings.Add("First element");
+        _strings.Add("Second element");
+        _strings.Add("Third element");
 
-        foreach(string item in strings)
+        foreach(string item in _strings)
         {
             Console.WriteLine(item);
         }
@@ -87,6 +90,17 @@ namespace CollectionFunction
             //Dictionary uses key to look up stored data 
             Console.WriteLine(_directory["Stephen"]);
             Console.WriteLine(_directory["Jonathon"]);
+
+            Console.WriteLine("===Non-generic Collection===");
+
+            _nonGeneric.Add("Stephen");
+            _nonGeneric.Add(10);
+            _nonGeneric.Add(true);
+            _nonGeneric.Add(10.75);
+
+            _strings[0].ToUpper();
+            //_nonGeneric[0].ToUpper(); - Will not work due to the element being an object as it was autoboxing from a string initially 
         }
+
     }
 }
