@@ -1,4 +1,4 @@
-﻿namespace StoreAppModel;
+﻿namespace PokeModel;
 public class Shop
 {
 
