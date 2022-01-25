@@ -32,5 +32,10 @@ namespace PokeBL
 
             return _repo.AddPokemon(p_poke);
         }
+
+        public Pokemon AddPokemon(PokemonBL p_poke)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
