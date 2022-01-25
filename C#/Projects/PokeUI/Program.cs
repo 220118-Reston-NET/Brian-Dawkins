@@ -20,7 +20,7 @@ while (repeat)
     switch (ans)
     {
         case "AddPokemon":
-            menu = new AddPokeMenu();
+            menu = new AddPokeMenu(new PokemonBL(new Repository()));
             break;
         case "MainMenu":
             menu = new MainMenu();
