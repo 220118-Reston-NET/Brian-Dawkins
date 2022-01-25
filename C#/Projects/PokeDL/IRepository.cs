@@ -9,7 +9,7 @@ namespace PokeDL
 /// Just think of Data layer as the delivery man of your uber eats. You definitely dont want your delivery man to touch 
 /// the food he is delivering and just give it to you so you can do whatever you want with it.
 /// </summary>
-public class IRepository
+public interface IRepository
 {
     /// <summary>
     /// Add a pokemon to the database
