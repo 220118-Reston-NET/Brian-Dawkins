@@ -29,6 +29,7 @@ namespace PokeBL
             p_poke.Attack += rand.Next(-5,5);
             p_poke.Defense += rand.Next(-5,5);
             p_poke.Health += rand.Next(-5,5);
+            
 
             //Validation process
             List<Pokemon> listOfPoke = _repo.GetAllPokemon();
