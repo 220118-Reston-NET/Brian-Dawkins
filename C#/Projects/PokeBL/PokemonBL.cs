@@ -42,14 +42,5 @@ namespace PokeBL
             }
         }
 
-        public Pokemon AddPokemon(PokemonBL p_poke)
-        {
-            throw new NotImplementedException();
-        }
-
-        void IPokemonBL.AddPokemon(Pokemon newPoke)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
