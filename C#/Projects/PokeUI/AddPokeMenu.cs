@@ -33,9 +33,11 @@ namespace PokeUI
             {
                 case "0":
                     return "MainMenu";
+
                 case "1":
                 //Excception handling to have a better user experience
-                try{
+                try
+                {
                     _pokeBL.AddPokemon(_newPoke);
                 }
                 catch (System.Exception exc)

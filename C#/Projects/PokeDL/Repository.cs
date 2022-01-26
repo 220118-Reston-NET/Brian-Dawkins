@@ -18,7 +18,7 @@ namespace PokeDL
             
             _jsonString = JsonSerializer.Serialize(p_poke, new JsonSerializerOptions {WriteIndented = true});
 
-            File.WriteAllText(path, _jsonString);
+            File.WriteAllText(path , _jsonString);
 
             return p_poke;
         }
