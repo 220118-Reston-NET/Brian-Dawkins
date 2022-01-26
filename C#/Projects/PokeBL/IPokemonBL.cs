@@ -17,5 +17,6 @@ public interface IPokemonBL
 /// <returns></returns>
     Pokemon AddPokemon(PokemonBL p_poke);
         void AddPokemon(Pokemon newPoke);
+        // void AddPokemon(Pokemon newPoke);
     }
 }
