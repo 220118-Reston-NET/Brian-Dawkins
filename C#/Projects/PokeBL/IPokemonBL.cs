@@ -16,5 +16,6 @@ public interface IPokemonBL
 /// <param name="p_poke"></param>
 /// <returns></returns>
     Pokemon AddPokemon(PokemonBL p_poke);
-}
+        void AddPokemon(Pokemon newPoke);
+    }
 }
