@@ -1,0 +1,5 @@
+2022-01-27 11:09:17.398 -05:00 [INF] Displaying AddPokemon Menu to user
+2022-01-27 11:09:26.587 -05:00 [INF] Displaying MainMenu to user
+2022-01-27 11:09:27.859 -05:00 [INF] Displaying SearchPokemon Menu to user
+2022-01-27 11:09:31.099 -05:00 [INF] Displaying MainMenu to user
+2022-01-27 11:09:31.971 -05:00 [INF] Exiting application

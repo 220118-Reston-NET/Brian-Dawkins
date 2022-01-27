@@ -1,6 +1,7 @@
 using PokeBL;
 using PokeModel;
 
+
 namespace PokeUI
 {
     public class AddPokeMenu : IMenu
@@ -38,11 +39,14 @@ namespace PokeUI
                 //Excception handling to have a better user experience
                 try
                 {
+                    Log.Information("Adding pokemon \n" + _newPoke);
                     _pokeBL.AddPokemon(_newPoke);
+                    Log.Information("Successful at adding pokemon!");
                 }
                 catch (System.Exception exc)
                 {
-                    Console.WriteLine(exc.Message);
+                    Log.Warning("Failed to add pokemon due to reaching total capacity (4)")
+;                    Console.WriteLine(exc.Message);
                     Console.WriteLine("Please press Enter to continue");
                     Console.ReadLine();
                 }
