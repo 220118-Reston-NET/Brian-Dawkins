@@ -42,5 +42,32 @@ namespace PokeBL
             }
         }
 
+        public List<Pokemon> SearchPokemon(string p_name)
+        {
+            List<Pokemon> listOfPokemon = _repo.GetAllPokemon();
+
+            // LINQ library
+            return listOfPokemon
+            .Where(poke => poke.Name.Contains(p_name)) //Where method is designed to filter a collection based on a condition 
+            .ToList(); //ToList method converts into a list collection that our method needs to return
+
+            // foreach (Pokemon poke in listOfPokemon)
+            // {
+            //     if (poke.Name.Contains(p_name))
+            //     {
+            //         //Add to a list
+
+            //         /*
+            //             "test" == "test - true
+            //             "test" == "t" - false
+
+            //             "test".Contains("t") - true
+            //             "test.Contains("est") - true
+            //             "test.Contains("tt") - false
+            //         */    
+            //     }
+            // }
+            // //return the filtered list
+        }
     }
 }

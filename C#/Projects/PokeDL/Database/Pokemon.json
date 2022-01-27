@@ -1,15 +1,77 @@
-{
-  "Name": "Ditto",
-  "Level": 1,
-  "Attack": 51,
-  "Defense": 53,
-  "Health": 56,
-  "Abilities": [
-    {
-      "Name": "Tackle",
-      "PP": 40,
-      "Power": 40,
-      "Accuracy": 80
-    }
-  ]
-}
+[
+  {
+    "Name": "Ditto",
+    "Level": 1,
+    "Attack": 51,
+    "Defense": 53,
+    "Health": 56,
+    "Abilities": [
+      {
+        "Name": "Tackle",
+        "PP": 40,
+        "Power": 40,
+        "Accuracy": 80
+      }
+    ]
+  },
+  {
+    "Name": "Ditto",
+    "Level": 1,
+    "Attack": 51,
+    "Defense": 52,
+    "Health": 59,
+    "Abilities": [
+      {
+        "Name": "Tackle",
+        "PP": 40,
+        "Power": 40,
+        "Accuracy": 80
+      }
+    ]
+  },
+  {
+    "Name": "Ditto",
+    "Level": 1,
+    "Attack": 51,
+    "Defense": 52,
+    "Health": 59,
+    "Abilities": [
+      {
+        "Name": "Tackle",
+        "PP": 40,
+        "Power": 40,
+        "Accuracy": 80
+      }
+    ]
+  },
+  {
+    "Name": "Pikachu",
+    "Level": 10,
+    "Attack": 48,
+    "Defense": 48,
+    "Health": 63,
+    "Abilities": [
+      {
+        "Name": "Tackle",
+        "PP": 40,
+        "Power": 40,
+        "Accuracy": 80
+      }
+    ]
+  },
+  {
+    "Name": "Pikachu",
+    "Level": 10,
+    "Attack": 48,
+    "Defense": 48,
+    "Health": 63,
+    "Abilities": [
+      {
+        "Name": "Tackle",
+        "PP": 40,
+        "Power": 40,
+        "Accuracy": 80
+      }
+    ]
+  }
+]
